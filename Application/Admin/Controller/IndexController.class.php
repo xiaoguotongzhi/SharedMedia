@@ -10,10 +10,6 @@ header('Access-Control-Allow-Credentials:true');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers:Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With');
 class IndexController extends Controller{
-    public function index(){
-        return Helper::response(Status::FAIL);
-    }
-
     /*
      * 登录
      * */
@@ -44,21 +40,20 @@ class IndexController extends Controller{
     /*
      * 临时测试密码
      * */
-    public function getPass(){
-        echo time();die;
+    /*public function getPass(){
         $password = '123456';
         $model = D("Public");
         print_r($model->generateHashWithSalt($password));
-    }
+    }*/
 
 
     /*
      * 获取token测试
      * */
-    public function getToken(){
+    /*public function getToken(){
         $username = '15110268175';
         $password = '123456';
         $model = D("Public");
         echo $model->getToken($username,$password);
-    }
+    }*/
 }

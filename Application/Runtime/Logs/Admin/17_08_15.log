@@ -4375,3 +4375,369 @@ SQL: UPDATE `admin_user` SET `token`='ab4f700765fb971bd86be412NCT1SLwfHEI' WHERE
 SQL: SELECT * FROM `admin_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.006000s ]
 NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\IndexController.class.php 第 35 行.
 
+[ 2017-08-15T19:44:36+08:00 ] 127.0.0.1 /?s=/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-15T19:45:33+08:00 ] 127.0.0.1 /?s=/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 18 行.
+
+[ 2017-08-15T19:46:33+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-15T19:46:37+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 18 行.
+
+[ 2017-08-15T19:46:39+08:00 ] 127.0.0.1 /?s=/admin/manager/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 18 行.
+
+[ 2017-08-15T19:48:35+08:00 ] 127.0.0.1 /?s=/admin/manager/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 18 行.
+
+[ 2017-08-15T19:48:43+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-15T19:48:47+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SL' LIMIT 1   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 23 行.
+
+[ 2017-08-15T19:48:50+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-15T19:49:13+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-15T19:49:16+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64a' LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 23 行.
+
+[ 2017-08-15T19:49:19+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-15T20:01:35+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 16 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 18 行.
+
+[ 2017-08-15T20:01:55+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 17 行.
+
+[ 2017-08-15T20:02:01+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.006000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 23 行.
+
+[ 2017-08-15T20:03:23+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.006000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 23 行.
+
+[ 2017-08-15T20:05:57+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-15T20:06:18+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 23 行.
+
+[ 2017-08-15T20:06:46+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.004000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\SharedMedia\ThinkPHP\Library\Think\Model.class.php 第 252 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\SharedMedia\ThinkPHP\Library\Think\Model.class.php 第 252 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\SharedMedia\ThinkPHP\Library\Think\Model.class.php 第 252 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\SharedMedia\ThinkPHP\Library\Think\Model.class.php 第 252 行.
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 28 行.
+ERR: Think\Model:getErrors方法不存在！
+
+[ 2017-08-15T20:07:23+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.005001s ]
+
+[ 2017-08-15T20:08:02+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 27 行.
+
+[ 2017-08-15T20:08:51+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.005000s ]
+
+[ 2017-08-15T20:08:52+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.004000s ]
+
+[ 2017-08-15T20:08:52+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.006000s ]
+
+[ 2017-08-15T20:09:05+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.004001s ]
+
+[ 2017-08-15T20:09:21+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.004000s ]
+
+[ 2017-08-15T20:09:22+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.005000s ]
+
+[ 2017-08-15T20:09:47+08:00 ] 127.0.0.1 /?s=/admin/manager/addnode/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_node` [ RunTime:0.006001s ]
+SQL: INSERT INTO `admin_node` (`node_name`,`node_url`,`node_css`,`pid`) VALUES ('主页','zhuye.html','fa fa-success',0) [ RunTime:0.006000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 28 行.
+
+[ 2017-08-15T20:50:28+08:00 ] 127.0.0.1 /?s=/admin/manager/addrole/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.004001s ]
+SQL: INSERT INTO `admin_role` (`role_name`) VALUES ('超级管理员') [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 43 行.
+
+[ 2017-08-15T20:51:19+08:00 ] 127.0.0.1 /?s=/admin/manager/addrole/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.005000s ]
+SQL: INSERT INTO `admin_role` (`role_name`) VALUES ('超级管理员') [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ManagerController.class.php 第 43 行.
+
