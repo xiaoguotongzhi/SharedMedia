@@ -4988,3 +4988,29 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-08-15T21:44:03+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/64af9a94f48544854f892112NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '64af9a94f48544854f892112NCT1SLwfHEI' LIMIT 1   [ RunTime:0.006001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\RuleController.class.php 第 23 行.
+
+[ 2017-08-15T21:44:19+08:00 ] 127.0.0.1 /?s=/admin/manager/index/token/b54691390972aef50d77f212NCT1SLwfHEI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b54691390972aef50d77f212NCT1SLwfHEI' LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

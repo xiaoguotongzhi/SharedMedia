@@ -20,9 +20,9 @@ class ManagerController extends RuleController{
         if(!IS_POST) return Helper::response(Status::FAIL,'无效的传值方式Method');
         $node_name = I("post.node_name")?I("post.node_name"):null;
         $node_url = I("post.node_url")?I("post.node_url"):null;
-        $node_css = I("post.node_css")?I("post.node_css"):null;
+        //$node_css = I("post.node_css")?I("post.node_css"):null;
         $pid = I("post.pid")?I("post.pid"):null;
-        if(empty($node_name) || empty($node_url) || empty($node_css)){
+        if(empty($node_name) || empty($node_url)){
             return Helper::response(Status::FAIL,'检测到为空的参数');
         }
 
@@ -32,6 +32,11 @@ class ManagerController extends RuleController{
         return Helper::response(Status::FAIL,$node->getErrors());
 
     }
+
+    /*
+     * 菜单列表
+     * */
+    public function MenuLists(){}
 
 
     /*
