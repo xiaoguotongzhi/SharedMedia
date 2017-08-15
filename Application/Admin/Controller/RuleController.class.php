@@ -20,7 +20,7 @@ class RuleController extends Controller{
         $User = M("admin_user");
         $where['token'] = $token;
         $data = $User->where($where)->find();
-        if(empty($data)) Helper::response(Status::FAIL,'检测到无效的Token');
+        if(empty($data)) return Helper::response(Status::FAIL,'检测到无效的Token');
         return true;
     }
 }
