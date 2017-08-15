@@ -30,7 +30,6 @@
 参数：   
 `node_name:菜单名称`   
 `node_url:菜单地址`   
-`node_css:菜单样式`   
 `pid:上级菜单id`
 
 接口返回：
