@@ -62,12 +62,16 @@ class ManagerController extends RuleController{
 
 
     /*
-     * 修改菜单
+     * 更新菜单
      * */
-    public function EditIdMenu(){
-        $json = $GLOBALS['HTTP_RAW_POST_DATA'];
-        $data = (array)json_decode($json);
-        print_r($json);
+    public function editMenu(){
+        $node_id = I('get.node_id');
+        $data = I('post.');
+        foreach ($data as $k=>$v){
+            $da[$k] = $v;
+            M("admin_node")->where('node_id='.$node_id)->save($da);
+        }
+        return Helper::response(Status::SUCCESS,null);
     }
 
 
