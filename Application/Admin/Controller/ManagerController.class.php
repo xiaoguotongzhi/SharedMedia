@@ -62,6 +62,16 @@ class ManagerController extends RuleController{
 
 
     /*
+     * 修改菜单
+     * */
+    public function EditIdMenu(){
+        $json = $GLOBALS['HTTP_RAW_POST_DATA'];
+        $data = (array)json_decode($json);
+        print_r($json);
+    }
+
+
+    /*
      * 添加角色
      * */
     public function addRole(){
