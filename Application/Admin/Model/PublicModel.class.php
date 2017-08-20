@@ -39,6 +39,8 @@ class PublicModel extends Model {
      * token生成
      * */
     public function getToken($username,$password){
-        return substr(md5(uniqid(rand(), true)), 0, 22).crypt($username,$password);
+        $url = $_SERVER['HTTP_HOST']; //获取完整路径
+        $token = md5($url.$username.$password.md5(uniqid(rand(), true)));
+        return $token;
     }
 }
