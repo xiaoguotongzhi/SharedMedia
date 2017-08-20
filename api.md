@@ -191,3 +191,30 @@
 	    "msg": "成功",
 	    "data": null
 	}
+
+
+<br><br>
+
+> **修改菜单内容**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/editmenu/token/409dd822f6b93ceac8abd27d1b78750f/node_id/6](http://www.chaorenyundong.com/?s=/admin/manager/editmenu/token/409dd822f6b93ceac8abd27d1b78750f/node_id/6 "修改菜单内容")
+
+请求方式：GET/POST
+
+参数：   
+get参数：
+`node_id:菜单id`    
+<br>
+post参数（可选）：    
+`node_name:菜单名称`   
+`node_url:菜单地址`   
+`node_css:菜单图标样式`   
+`pid:上级菜单id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+	}
