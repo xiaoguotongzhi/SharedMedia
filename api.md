@@ -58,3 +58,136 @@
 	    "msg": "成功",
 	    "data": 2
 	}
+
+<br><br>
+
+> **总菜单列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/menulists/token/2535bb43d3d040f4c8dc9d12NCT1SLwfHEI](http://www.chaorenyundong.com/?s=/admin/manager/menulists/token/2535bb43d3d040f4c8dc9d12NCT1SLwfHEI "总菜单列表")
+
+请求方式：GET
+
+参数：   
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        {
+	            "node_id": "1",
+	            "node_name": "主页",
+	            "node_url": "zhuye.html",
+	            "node_css": "fa fa-success",
+	            "pid": "0",
+	            "child": [
+	                {
+	                    "node_id": "13",
+	                    "node_name": "1",
+	                    "node_url": "1",
+	                    "node_css": null,
+	                    "pid": "1"
+	                },
+	                {
+	                    "node_id": "14",
+	                    "node_name": "1",
+	                    "node_url": "1",
+	                    "node_css": null,
+	                    "pid": "1"
+	                }
+	            ]
+	        },
+	        {
+	            "node_id": "4",
+	            "node_name": "广告管理",
+	            "node_url": "我千万千瓦",
+	            "node_css": "我去我去",
+	            "pid": "0",
+	            "child": [
+	                {
+	                    "node_id": "10",
+	                    "node_name": "2",
+	                    "node_url": "3",
+	                    "node_css": null,
+	                    "pid": "4"
+	                },
+	                {
+	                    "node_id": "11",
+	                    "node_name": "2",
+	                    "node_url": "3",
+	                    "node_css": null,
+	                    "pid": "4"
+	                },
+	                {
+	                    "node_id": "12",
+	                    "node_name": "2",
+	                    "node_url": "3",
+	                    "node_css": null,
+	                    "pid": "4"
+	                }
+	            ]
+	        },
+	        {
+	            "node_id": "5",
+	            "node_name": "管理员",
+	            "node_url": "飒飒",
+	            "node_css": "飒飒",
+	            "pid": "0",
+	            "child": null
+	        },
+	        {
+	            "node_id": "6",
+	            "node_name": "主页",
+	            "node_url": "啊",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        },
+	        {
+	            "node_id": "7",
+	            "node_name": "主页",
+	            "node_url": "html",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        },
+	        {
+	            "node_id": "8",
+	            "node_name": "主页",
+	            "node_url": "html",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        },
+	        {
+	            "node_id": "9",
+	            "node_name": "的",
+	            "node_url": "的",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        }
+    	]
+    }
+
+
+<br><br>
+
+> **删除菜单项**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/DelIdMenu/token/2535bb43d3d040f4c8dc9d12NCT1SLwfHEI/node_id/9](http://www.chaorenyundong.com/?s=/admin/manager/DelIdMenu/token/2535bb43d3d040f4c8dc9d12NCT1SLwfHEI/node_id/9 "删除菜单项")
+
+请求方式：GET
+
+参数：   
+`node_id:菜单id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+	}

@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Common\Common\Page;
 use Think\Controller;
 
 use Common\Common\Helper;
@@ -34,9 +35,30 @@ class ManagerController extends RuleController{
     }
 
     /*
-     * 菜单列表
+     * 总菜单列表
      * */
-    public function MenuLists(){}
+    public function MenuLists(){
+        //查询pid=0的列表
+        $data = M("admin_node")->where('pid=0')->select();
+        foreach ($data as $key=>$val){
+            $data2 = M("admin_node")->where('pid='.$val['node_id'])->select();
+            $data[$key]['child'] = $data2;
+        }
+        return Helper::response(Status::SUCCESS,$data);
+    }
+
+    /*
+     * 删除某一菜单
+     * */
+    public function DelIdMenu(){
+        $node_id = $_GET['node_id']?$_GET['node_id']:null;
+        $model = M("admin_node");
+        if($model->where('node_id='.$node_id)->delete()){
+            return Helper::response(Status::SUCCESS,null);
+        }else{
+            return Helper::response(Status::FAIL,null);
+        }
+    }
 
 
     /*
