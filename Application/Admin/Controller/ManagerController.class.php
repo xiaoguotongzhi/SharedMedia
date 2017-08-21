@@ -54,6 +54,10 @@ class ManagerController extends RuleController{
         $node_id = $_GET['node_id']?$_GET['node_id']:null;
         $model = M("admin_node");
         if($model->where('node_id='.$node_id)->delete()){
+            $count = $model->where('pid='.$node_id)->count();
+            if($count>0){
+                $model->where('pid='.$node_id)->delete();
+            }
             return Helper::response(Status::SUCCESS,null);
         }else{
             return Helper::response(Status::FAIL,null);
