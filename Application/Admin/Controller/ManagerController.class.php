@@ -29,8 +29,8 @@ class ManagerController extends RuleController{
 
         $node = M("admin_node");
         $arr[] = $_POST;
-        if($node->addAll($arr)) return Helper::response(Status::SUCCESS,null);
-        return Helper::response(Status::FAIL,$node->getErrors());
+        if($id = $node->addAll($arr)) return Helper::response(Status::SUCCESS,$id);
+        return Helper::response(Status::FAIL,null);
 
     }
 
@@ -82,9 +82,180 @@ class ManagerController extends RuleController{
         if(!IS_POST) return Helper::response(Status::FAIL,'无效的传值方式Method');
         $role_name = $_POST['role_name'];
         if(empty($role_name)) return Helper::response(Status::FAIL,'检测到为空的参数');
-        $data['role_name'] = $role_name;
         $role = M("admin_role");
+        $count = $role->where('role_name='.$role_name)->count();
+        if($count>0) return Helper::response(Status::FAIL,'请勿重复添加');
+        $data['role_name'] = $role_name;
         if($id = $role->add($data)) return Helper::response(Status::SUCCESS,$id);
-        return Helper::response(Status::FAIL,$role->getErrors());
+        return Helper::response(Status::FAIL,null);
+    }
+
+
+    /*
+     * 角色列表
+     * */
+    public function RoleLists(){
+        $data = M("admin_role")->select();
+        return Helper::response(Status::SUCCESS,$data);
+    }
+
+
+    /*
+     * 新增管理员
+     * */
+    public function addNewManager(){
+
+        //设置用户账户信息
+        $username = $_POST['username'];
+        $pwd = '123456';
+        $pub = D("Public");
+        $res = $pub->generateHashWithSalt($pwd);
+        $password = $res['password'];
+        $salt = $res['salt'];
+
+        //设置用户权限
+        $role = explode(',',$_POST['role']);
+
+        $data['username'] = $username;
+        $data['password'] = $password;
+        $data['create_time'] = time();
+        $data['create_ip'] = $_SERVER['REMOTE_ADDR'];
+        $data['salt'] = $salt;
+        $admin_user = M("admin_user");
+        $count = $admin_user->where('username='.$username)->count();
+        if($count>0) return Helper::response(Status::FAIL,'请勿重复添加');
+        if($id = $admin_user->add($data)){
+            //等待处理(node遍历入库)
+            $arr = array();
+            foreach ($role as $key=>$val){
+                $arr[$key]['user_id'] = $id;
+                $arr[$key]['role_id'] = $val;
+            }
+            $admin_user_role = M("admin_user_role");
+            if($admin_user_role->addAll($arr)){
+                return Helper::response(Status::SUCCESS,['user_id'=>$id]);
+            }else{
+                return Helper::response(Status::FAIL,null);
+            }
+        }else{
+            return Helper::response(Status::FAIL,null);
+        }
+    }
+
+
+
+    /*
+     * 管理员列表
+     * */
+    public function ManagersList(){
+        $admin_user = M("admin_user");
+        $data = $admin_user
+            ->join('admin_user_role ON admin_user.id = admin_user_role.user_id')
+            ->join('admin_role ON admin_user_role.role_id = admin_role.role_id')
+            ->select();
+
+        $arr = array();
+        foreach ($data as $key=>$val) {
+            $arr[$val['id']]['user_id'] = $val['id'];
+            $arr[$val['id']]['username'] = $val['username'];
+            $arr[$val['id']]['role_name'][] = $val['role_name'];
+            $arr[$val['id']]['create_time'] = date('Y-m-d H:i:s',$val['create_time']);
+        }
+        return Helper::response(Status::SUCCESS,$arr);
+    }
+
+
+    /*
+     * 管理员信息详情
+     * */
+    public function ManagerIdInfo(){
+        $user_id = $_GET['user_id']?$_GET['user_id']:null;
+        if(empty($user_id)) return Helper::response(Status::FAIL,'检测到为空的参数');
+
+        $admin_user = M("admin_user");
+        $data = $admin_user
+            ->join('admin_user_role ON admin_user.id = admin_user_role.user_id')
+            ->join('admin_role ON admin_user_role.role_id = admin_role.role_id')
+            ->where('admin_user.id='.$user_id)
+            ->select();
+
+        $arr = array();
+        foreach ($data as $key=>$val) {
+            $arr[$val['id']]['user_id'] = $val['id'];
+            $arr[$val['id']]['username'] = $val['username'];
+            $arr[$val['id']]['role_name'][] = $val['role_name'];
+            $arr[$val['id']]['create_time'] = date('Y-m-d H:i:s',$val['create_time']);
+        }
+        return Helper::response(Status::SUCCESS,$arr);
+    }
+
+
+    /*
+     * 修改管理员角色信息
+     * */
+    public function editManagerInfo(){
+        $user_id = $_POST['user_id']?$_POST['user_id']:null;
+        $role = explode(',',$_POST['role']);
+        if(empty($user_id) || empty($role)) return Helper::response(Status::FAIL,'检测到为空的参数');
+        //先删除再添加
+        $admin_user_role = M("admin_user_role");
+        if($admin_user_role->where('user_id='.$user_id)->delete()){
+            $arr = array();
+            foreach ($role as $key=>$val){
+                $arr[$key]['user_id'] = $user_id;
+                $arr[$key]['role_id'] = $val;
+            }
+
+            if($admin_user_role->addAll($arr)){
+                return Helper::response(Status::SUCCESS,null);
+            }else{
+                return Helper::response(Status::FAIL,null);
+            }
+
+        }else{
+            return Helper::response(Status::FAIL,null);
+        }
+    }
+
+    /*
+     * 角色信息删除
+     * */
+    public function delRoleInfo(){
+        $user_id = $_GET['user_id']?$_GET['user_id']:null;
+        if(empty($user_id)) return Helper::response(Status::FAIL,'检测到为空的参数');
+        $admin_user = M("admin_user");
+        //删除管理员表
+        if($admin_user->where('id='.$user_id)->delete()){
+            //删除管理员角色表
+            $admin_user_role = M("admin_user_role");
+            if($admin_user_role->where('user_id='.$user_id)->delete()){
+                return Helper::response(Status::SUCCESS,null);
+            }else{
+                return Helper::response(Status::FAIL,null);
+            }
+        }
+    }
+
+
+    /*
+     * 角色密码重置
+     * */
+    public function PasswordReset(){
+        $user_id = $_GET['user_id']?$_GET['user_id']:null;
+        if(empty($user_id)) return Helper::response(Status::FAIL,'检测到为空的参数');
+        $pwd = '123456';
+        $pub = D("Public");
+        $res = $pub->generateHashWithSalt($pwd);
+        $password = $res['password'];
+        $salt = $res['salt'];
+
+        $data['password'] = $password;
+        $data['salt'] = $salt;
+        $admin_user = M("admin_user");
+        if($admin_user->where('id='.$user_id)->save($data)){
+            return Helper::response(Status::SUCCESS,null);
+        }else{
+            return Helper::response(Status::FAIL,null);
+        }
     }
 }

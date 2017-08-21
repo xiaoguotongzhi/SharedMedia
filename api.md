@@ -218,3 +218,225 @@ post参数（可选）：
 	    "msg": "成功",
 	    "data": null
 	}
+
+<br><br>
+
+> **添加职位**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/addRole/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/addRole/token/409dd822f6b93ceac8abd27d1b78750f "添加角色")
+
+请求方式：POST
+
+参数：
+`$role_name:角色名称` 
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": 1
+	}
+
+<br><br>
+
+> **职位列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/RoleLists/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/RoleLists/token/409dd822f6b93ceac8abd27d1b78750f "角色列表")
+
+请求方式：GET
+
+参数：
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        {
+	            "role_id": "2",
+	            "role_name": "超级管理员"
+	        },
+	        {
+	            "role_id": "3",
+	            "role_name": "系统管理员"
+	        },
+	        {
+	            "role_id": "4",
+	            "role_name": "系统"
+	        },
+	        {
+	            "role_id": "5",
+	            "role_name": "系统之家"
+	        },
+	        {
+	            "role_id": "6",
+	            "role_name": "系统之家"
+	        }
+	    ]
+    }
+
+<br><br>
+
+> **新增管理员**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/addNewManager/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/addNewManager/token/409dd822f6b93ceac8abd27d1b78750f "新增管理员")
+
+请求方式：POST
+
+参数：   
+`username:用户名`   
+`role:拥有的职位信息`（用英文逗号分隔的字符串）
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "user_id": 4
+	    }
+    }
+
+<br><br>
+
+> **管理员列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/ManagersList/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/ManagersList/token/409dd822f6b93ceac8abd27d1b78750f "管理员列表")
+
+请求方式：GET
+
+参数：
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "1": {
+	            "user_id": "1",
+	            "username": "15110268175",
+	            "role_name": [
+	                "超级管理员"
+	            ],
+	            "create_time": "2017-08-15 15:57:06"
+	        },
+	        "2": {
+	            "user_id": "2",
+	            "username": "13731010152",
+	            "role_name": [
+	                "超级管理员",
+	                "系统管理员"
+	            ],
+	            "create_time": "2017-08-15 15:57:06"
+	        },
+	        "3": {
+	            "user_id": "3",
+	            "username": "18222222222",
+	            "role_name": [
+	                "超级管理员"
+	            ],
+	            "create_time": "2017-08-21 15:17:46"
+	        },
+	        "4": {
+	            "user_id": "4",
+	            "username": "13666666666",
+	            "role_name": [
+	                "超级管理员"
+	            ],
+	            "create_time": "2017-08-21 15:21:38"
+	        }
+	    }
+    }
+
+<br><br>
+
+> **管理员详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/ManagerIdInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/2](http://www.chaorenyundong.com/?s=/admin/manager/ManagerIdInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/2 "管理员详情")
+
+请求方式：GET
+
+参数：   
+`user_id:管理员id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "2": {
+	            "user_id": "2",
+	            "username": "13731010152",
+	            "role_name": [
+	                "超级管理员",
+	                "系统管理员"
+	            ],
+	            "create_time": "2017-08-15 15:57:06"
+	        }
+	    }
+    }
+
+
+<br><br>
+
+> **管理员信息修改**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/editManagerInfo/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/editManagerInfo/token/409dd822f6b93ceac8abd27d1b78750f "管理员信息修改")
+
+请求方式：POST
+
+参数：   
+`user_id:管理员id`    
+`role:管理员角色`（用英文逗号分隔的字符串）
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **管理员信息删除**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员信息修改")
+
+请求方式：GET
+
+参数：   
+`user_id:管理员id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **管理员密码重置**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员信息修改")
+
+请求方式：GET
+
+参数：   
+`user_id:管理员id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
