@@ -730,3 +730,60 @@ post参数（可选）：
 	        }
 	    ]
     }
+
+
+<br><br>
+
+> **删除职位信息**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/delNodeInfo/token/ca5230f11e0076ebbc9a718bcb78b4aa/role_id/31](http://www.chaorenyundong.com/?s=/admin/manager/delNodeInfo/token/ca5230f11e0076ebbc9a718bcb78b4aa/role_id/31 "删除职位信息")
+
+请求方式：GET
+
+参数：   
+`role_id:职位id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **属于当前用户的权限菜单列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b "属于当前用户的权限菜单列表")
+
+请求方式：GET
+
+参数：   
+`role_id:职位id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        {
+	            "node_id": "2",
+	            "node_name": "投放效果",
+	            "node_url": "toufang.html",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        },
+	        {
+	            "node_id": "2",
+	            "node_name": "投放效果",
+	            "node_url": "toufang.html",
+	            "node_css": null,
+	            "pid": "0",
+	            "child": null
+	        }
+	    ]
+    }

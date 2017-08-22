@@ -32,6 +32,7 @@ class IndexController extends Controller{
             $adminUser = M("admin_user");
             if($adminUser->where('id='.$userInfo['id'])->save($data)){
                 $rs = $user->where('id='.$userInfo['id'])->find();
+                session('username',$username);
                 return Helper::response(Status::SUCCESS,['user_id'=>$rs['id'],'token'=>$rs['token']]);
             }
         }

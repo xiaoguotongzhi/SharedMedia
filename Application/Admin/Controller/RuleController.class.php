@@ -14,9 +14,9 @@ class RuleController extends Controller{
     {
         parent::__construct();
         $token = $_GET['token'];
-        if(empty($token)){
-            Helper::response(Status::FAIL,'检测到无效的Token');
-        }
+        if(empty($token)) return Helper::response(Status::FAIL,'检测到无效的Token');
+
+        if(empty($_SESSION['username'])) return Helper::response(Status::FAIL,'登录失效');
         $User = M("admin_user");
         $where['token'] = $token;
         $data = $User->where($where)->find();

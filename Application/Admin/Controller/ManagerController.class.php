@@ -357,6 +357,57 @@ class ManagerController extends RuleController{
      * 删除职位信息
      * */
     public function delNodeInfo(){
+        $role_id = $_GET['role_id']?$_GET['role_id']:null;
+        if(empty($role_id)) return Helper::response(Status::FAIL,'检测到为空的参数');
+        //删除角色表信息
+        $admin_role = M("admin_role");
+        if($admin_role->where('role_id='.$role_id)->delete()){
+            //删除角色权限关联表
+            $admin_role_node = M("admin_role_node");
+            $count = $admin_role_node->where('role_id='.$role_id)->count();
+            if($count>0){
+                if($admin_role_node->where('role_id='.$role_id)->delete()){
+                    return Helper::response(Status::SUCCESS,null);
+                }else{
+                    return Helper::response(Status::FAIL,null);
+                }
+            }else{
+                return Helper::response(Status::SUCCESS,null);
+            }
+        }else{
+            return Helper::response(Status::FAIL,null);
+        }
+    }
+
+    /*
+     * 属于当前用户的权限菜单列表
+     * */
+    public function UserHaveMenuLists()
+    {
+        //查询一级菜单
+        $username = $_SESSION['username'];
+        $sql="select admin_node.* from admin_user,admin_user_role,admin_role_node,admin_node
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_node.node_id
+                and admin_role_node.node_id=admin_node.node_id
+                and admin_user.username='$username'";
+        $db3=D();
+        $arr3=$db3->query($sql);
+
+        //循环一下根据pid查询二级菜单然后通过判断合并到相应的一级菜单中
+        foreach ($arr3 as $k => $v) {
+            $sql2 = "SELECT * FROM admin_node WHERE pid = ".$v['node_id'];
+            $db5 = D();
+            $arr5 = $db5->query($sql2);
+            if(empty($arr5)){
+                $arr3[$k]['child'] = null;
+            }else{
+                $arr3[$k]['child'] = $arr5;
+            }
+
+        }
+
+        return Helper::response(Status::SUCCESS,$arr3);
 
     }
 }
