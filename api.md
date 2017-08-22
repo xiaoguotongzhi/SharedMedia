@@ -240,45 +240,6 @@ post参数（可选）：
 
 <br><br>
 
-> **职位列表**
-
-地址：[http://www.chaorenyundong.com/?s=/admin/manager/RoleLists/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/RoleLists/token/409dd822f6b93ceac8abd27d1b78750f "角色列表")
-
-请求方式：GET
-
-参数：
-
-接口返回：
-
-	{
-	    "code": 20000,
-	    "msg": "成功",
-	    "data": [
-	        {
-	            "role_id": "2",
-	            "role_name": "超级管理员"
-	        },
-	        {
-	            "role_id": "3",
-	            "role_name": "系统管理员"
-	        },
-	        {
-	            "role_id": "4",
-	            "role_name": "系统"
-	        },
-	        {
-	            "role_id": "5",
-	            "role_name": "系统之家"
-	        },
-	        {
-	            "role_id": "6",
-	            "role_name": "系统之家"
-	        }
-	    ]
-    }
-
-<br><br>
-
 > **新增管理员**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/manager/addNewManager/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/addNewManager/token/409dd822f6b93ceac8abd27d1b78750f "新增管理员")
