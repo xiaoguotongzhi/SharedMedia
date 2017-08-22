@@ -406,7 +406,7 @@ post参数（可选）：
 
 > **管理员信息删除**
 
-地址：[http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员信息修改")
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/delRoleInfo/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员信息删除")
 
 请求方式：GET
 
@@ -426,7 +426,7 @@ post参数（可选）：
 
 > **管理员密码重置**
 
-地址：[http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员信息修改")
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4](http://www.chaorenyundong.com/?s=/admin/manager/PasswordReset/token/409dd822f6b93ceac8abd27d1b78750f/user_id/4 "管理员密码重置")
 
 请求方式：GET
 
@@ -439,4 +439,333 @@ post参数（可选）：
 	    "code": 20000,
 	    "msg": "成功",
 	    "data": null
+    }
+
+
+<br><br>
+
+> **职位列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/positionLists/token/fc94731595111968a6836caa7b7070c0](http://www.chaorenyundong.com/?s=/admin/manager/positionLists/token/fc94731595111968a6836caa7b7070c0 "职位列表")
+
+请求方式：GET
+
+参数：   
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        {
+	            "role_id": "2",
+	            "role_name": "超级管理员",
+	            "child": [
+	                {
+	                    "rn_id": "1",
+	                    "role_id": "2",
+	                    "node_id": "1",
+	                    "node_name": "主页",
+	                    "node_url": "zhuye.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "2",
+	                    "role_id": "2",
+	                    "node_id": "2",
+	                    "node_name": "投放效果",
+	                    "node_url": "toufang.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "3",
+	                    "role_id": "2",
+	                    "node_id": "3",
+	                    "node_name": "商家列表",
+	                    "node_url": "shangjia.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "4",
+	                    "role_id": "2",
+	                    "node_id": "4",
+	                    "node_name": "帮助与反馈",
+	                    "node_url": "fankui.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "5",
+	                    "role_id": "2",
+	                    "node_id": "5",
+	                    "node_name": "提现申请",
+	                    "node_url": "tixian.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "6",
+	                    "role_id": "2",
+	                    "node_id": "6",
+	                    "node_name": "广告管理",
+	                    "node_url": "#",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "7",
+	                    "role_id": "2",
+	                    "node_id": "10",
+	                    "node_name": "设备管理",
+	                    "node_url": "#",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "8",
+	                    "role_id": "2",
+	                    "node_id": "13",
+	                    "node_name": "管理员",
+	                    "node_url": "#",
+	                    "node_css": null,
+	                    "pid": "0"
+	                }
+	            ]
+	        },
+	        {
+	            "role_id": "3",
+	            "role_name": "系统管理员",
+	            "child": [
+	                {
+	                    "rn_id": "9",
+	                    "role_id": "3",
+	                    "node_id": "1",
+	                    "node_name": "主页",
+	                    "node_url": "zhuye.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                },
+	                {
+	                    "rn_id": "10",
+	                    "role_id": "3",
+	                    "node_id": "2",
+	                    "node_name": "投放效果",
+	                    "node_url": "toufang.html",
+	                    "node_css": null,
+	                    "pid": "0"
+	                }
+	            ]
+	        },
+	        {
+	            "role_id": "4",
+	            "role_name": "系统",
+	            "child": null
+	        }
+	    ]
+    }
+
+
+<br><br>
+
+> **职位详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/positionIdInfo/token/fc94731595111968a6836caa7b7070c0/role_id/2](http://www.chaorenyundong.com/?s=/admin/manager/positionIdInfo/token/fc94731595111968a6836caa7b7070c0/role_id/2 "职位详情")
+
+请求方式：GET
+
+参数：   
+`role_id:职位id`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "role_id": "2",
+	        "role_name": "超级管理员",
+	        "child": [
+	            {
+	                "rn_id": "1",
+	                "role_id": "2",
+	                "node_id": "1",
+	                "node_name": "主页",
+	                "node_url": "zhuye.html",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "2",
+	                "role_id": "2",
+	                "node_id": "2",
+	                "node_name": "投放效果",
+	                "node_url": "toufang.html",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "3",
+	                "role_id": "2",
+	                "node_id": "3",
+	                "node_name": "商家列表",
+	                "node_url": "shangjia.html",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "4",
+	                "role_id": "2",
+	                "node_id": "4",
+	                "node_name": "帮助与反馈",
+	                "node_url": "fankui.html",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "5",
+	                "role_id": "2",
+	                "node_id": "5",
+	                "node_name": "提现申请",
+	                "node_url": "tixian.html",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "6",
+	                "role_id": "2",
+	                "node_id": "6",
+	                "node_name": "广告管理",
+	                "node_url": "#",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "7",
+	                "role_id": "2",
+	                "node_id": "10",
+	                "node_name": "设备管理",
+	                "node_url": "#",
+	                "node_css": null,
+	                "pid": "0"
+	            },
+	            {
+	                "rn_id": "8",
+	                "role_id": "2",
+	                "node_id": "13",
+	                "node_name": "管理员",
+	                "node_url": "#",
+	                "node_css": null,
+	                "pid": "0"
+	            }
+	        ]
+	    }
+    }
+
+
+<br><br>
+
+> **修改职位详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/editIdNode/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/editIdNode/token/409dd822f6b93ceac8abd27d1b78750f "修改职位详情")
+
+请求方式：POST
+
+参数：   
+`type:1.修改职位名称2.修改权限信息`   
+
+`type=1参数为（role_id、role_name）,type=2参数为（role_id、node），其中node为一个用英文逗号隔开的字符串`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+<br><br>
+
+> **权限列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/nodeLists/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/manager/nodeLists/token/409dd822f6b93ceac8abd27d1b78750f "权限列表")
+
+请求方式：POST
+
+参数：    
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        {
+	            "node_id": "1",
+	            "node_name": "主页",
+	            "node_url": "zhuye.html",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "2",
+	            "node_name": "投放效果",
+	            "node_url": "toufang.html",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "3",
+	            "node_name": "商家列表",
+	            "node_url": "shangjia.html",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "4",
+	            "node_name": "帮助与反馈",
+	            "node_url": "fankui.html",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "5",
+	            "node_name": "提现申请",
+	            "node_url": "tixian.html",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "6",
+	            "node_name": "广告管理",
+	            "node_url": "#",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "10",
+	            "node_name": "设备管理",
+	            "node_url": "#",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "13",
+	            "node_name": "管理员",
+	            "node_url": "#",
+	            "node_css": null,
+	            "pid": "0"
+	        },
+	        {
+	            "node_id": "19",
+	            "node_name": "y",
+	            "node_url": "h",
+	            "node_css": null,
+	            "pid": "0"
+	        }
+	    ]
     }

@@ -262,4 +262,101 @@ class ManagerController extends RuleController{
             return Helper::response(Status::FAIL,null);
         }
     }
+
+
+    /*
+     * 职位列表
+     * */
+    public function positionLists(){
+        $model = M("admin_role");
+        $model2 = M("admin_role_node");
+        $data = $model->select();//父级
+        foreach ($data as $key=>$value){
+            $data2 = $model2->where('role_id='.$value['role_id'])->join('admin_node ON admin_role_node.node_id = admin_node.node_id')->select();
+            if(empty($data2)){
+                $data[$key]['child'] = null;
+            }else{
+                $data[$key]['child'] = $data2;
+            }
+        }
+        return Helper::response(Status::SUCCESS,$data);
+    }
+
+
+    /*
+     * 职位详情
+     * */
+    public function positionIdInfo(){
+        $role_id = $_GET['role_id']?$_GET['role_id']:null;
+        if(empty($role_id)) return Helper::response(Status::FAIL,'检测到为空的参数');
+
+        $model = M("admin_role");
+        $model2 = M("admin_role_node");
+        $data = $model->where('role_id='.$role_id)->find();//父级
+        $data2 = $model2->where('role_id='.$data['role_id'])->join('admin_node ON admin_role_node.node_id = admin_node.node_id')->select();
+        $data['child'] = $data2;
+        return Helper::response(Status::SUCCESS,$data);
+    }
+
+
+    /*
+     * 修改职位权限
+     * */
+    public function editIdNode(){
+
+        $type = $_POST['type']?$_POST['type']:null;
+
+        if($type==1){
+
+            $role_id = $_POST['role_id']?$_POST['role_id']:null;
+            $role_name = $_POST['role_name']?$_POST['role_name']:null;
+            if(empty($role_id) || empty($role_name)) return Helper::response(Status::FAIL,'检测到为空的参数');
+            $data['role_name'] = $role_name;
+            if(M("admin_role")->where('role_id='.$role_id)->save($data)) return Helper::response(Status::SUCCESS,null);
+            return Helper::response(Status::FAIL,null);
+
+        }elseif ($type==2){
+            $role_id = $_POST['role_id']?$_POST['role_id']:null;
+            $node = explode(',',$_POST['node']);
+            if(empty($role_id) || empty($node)) return Helper::response(Status::FAIL,'检测到为空的参数');
+            if(M("admin_role_node")->where('role_id='.$role_id)->delete()){
+                $arr = array();
+                foreach ($node as $key=>$val){
+                    $arr[$key]['role_id'] = $role_id;
+                    $arr[$key]['node_id'] = $val;
+                }
+
+                if(M("admin_role_node")->addAll($arr)){
+                    return Helper::response(Status::SUCCESS,null);
+                }else{
+                    return Helper::response(Status::FAIL,null);
+                }
+
+            }else{
+                return Helper::response(Status::FAIL,null);
+            }
+
+
+        }else{
+            return Helper::response(Status::FAIL,'未定义的状态');
+        }
+
+    }
+
+    /*
+     * 权限列表
+     * */
+    public function nodeLists(){
+        $admin_node = M("admin_node");
+        $data = $admin_node->where('pid=0')->select();
+        return Helper::response(Status::SUCCESS,$data);
+    }
+
+
+    /*
+     * 删除职位信息
+     * */
+    public function delNodeInfo(){
+
+    }
 }
