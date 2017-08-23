@@ -38,6 +38,15 @@ class IndexController extends Controller{
         }
     }
 
+
+    /*
+     * 退出登录
+     * */
+    public function logout(){
+        session(null);
+        return Helper::response(Status::SUCCESS,null);
+    }
+
     /*
      * 临时测试密码
      * */

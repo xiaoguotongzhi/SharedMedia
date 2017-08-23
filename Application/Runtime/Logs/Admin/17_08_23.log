@@ -1,0 +1,14 @@
+[ 2017-08-23T09:37:23+08:00 ] 127.0.0.1 /?s=/admin/Pad/PadDamage/token/3409cc5b6793fb2e1b8027885755338b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.126800s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = '3409cc5b6793fb2e1b8027885755338b' LIMIT 1   [ RunTime:0.046800s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fault` ORDER BY end_time desc  [ RunTime:0.015600s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 39 行.
+

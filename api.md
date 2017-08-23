@@ -760,6 +760,8 @@ post参数（可选）：
 
 请求方式：GET
 
+说明：每页数据为10条，当总数据小于10条时，page中只会给一个空的div标签，只有当总数大于10的时候，才会给出完整的分页标签
+
 参数：   
 `role_id:职位id`
 
@@ -786,4 +788,297 @@ post参数（可选）：
 	            "child": null
 	        }
 	    ]
+    }
+
+<br><br>
+
+> **商家列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/Shop/ShoperList/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/Shop/ShoperList/token/3409cc5b6793fb2e1b8027885755338b "商家列表")
+
+请求方式：GET
+
+参数：  
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "id": "46",
+	                "equipment_num": "2",
+	                "money_count": "0",
+	                "looking_num": "15",
+	                "order_num": 0
+	            },
+	            {
+	                "id": "55",
+	                "equipment_num": "0",
+	                "money_count": "0",
+	                "looking_num": 0,
+	                "order_num": 0
+	            },
+	            {
+	                "id": "56",
+	                "equipment_num": "0",
+	                "money_count": "0",
+	                "looking_num": 0,
+	                "order_num": 0
+	            },
+	            {
+	                "id": "57",
+	                "equipment_num": "0",
+	                "money_count": "0",
+	                "looking_num": "45",
+	                "order_num": "3"
+	            },
+	            {
+	                "id": "58",
+	                "equipment_num": "0",
+	                "money_count": "0",
+	                "looking_num": 0,
+	                "order_num": 0
+	            },
+	            {
+	                "id": "59",
+	                "equipment_num": "0",
+	                "money_count": "0",
+	                "looking_num": 0,
+	                "order_num": 0
+	            }
+	        ],
+	        "page": "<div>    </div>"
+	    }
+    }
+
+
+<br><br>
+
+> **提现申请列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/Shop/withdrawalsLists/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/Shop/withdrawalsLists/token/409dd822f6b93ceac8abd27d1b78750f "提现申请列表")
+
+请求方式：GET
+
+参数：   
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "w_id": "3",
+	                "money": "30",
+	                "create_time": "1502722723",
+	                "create_ip": "113.45.68.245",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "工商银行(1234)",
+	                "username": "共享好友1",
+	                "shop_name": "xmm"
+	            },
+	            {
+	                "w_id": "4",
+	                "money": "20",
+	                "create_time": "1502723478",
+	                "create_ip": "113.45.68.245",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "工商银行(1234)",
+	                "username": "共享好友1",
+	                "shop_name": "xmm"
+	            },
+	            {
+	                "w_id": "5",
+	                "money": "20",
+	                "create_time": "1502723512",
+	                "create_ip": "113.45.68.245",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "工商银行(1234)",
+	                "username": "共享好友1",
+	                "shop_name": "xmm"
+	            },
+	            {
+	                "w_id": "6",
+	                "money": "20",
+	                "create_time": "1502723821",
+	                "create_ip": "113.45.68.245",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "工商银行(1234)",
+	                "username": "共享好友1",
+	                "shop_name": "xmm"
+	            },
+	            {
+	                "w_id": "7",
+	                "money": "20",
+	                "create_time": "1502727693",
+	                "create_ip": "113.45.68.245",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "工商银行(1234)",
+	                "username": "共享好友1",
+	                "shop_name": "xmm"
+	            },
+	            {
+	                "w_id": "9",
+	                "money": "10",
+	                "create_time": "1503216460",
+	                "create_ip": "113.45.59.94",
+					"user_id": "46",
+	                "status": "1",
+	                "card_name": "民生银行(8736)",
+	                "username": "共享好友63",
+	                "shop_name": "gxy"
+	            }
+	        ],
+	        "page": "<div>  <span class=\"current\">1</span><a class=\"num\" href=\"/index.php/Admin/Shop/withdrawalsLists/token/3409cc5b6793fb2e1b8027885755338b/p/2.html\">2</a><a class=\"num\" href=\"/index.php/Admin/Shop/withdrawalsLists/token/3409cc5b6793fb2e1b8027885755338b/p/3.html\">3</a> <a class=\"next\" href=\"/index.php/Admin/Shop/withdrawalsLists/token/3409cc5b6793fb2e1b8027885755338b/p/2.html\">>></a> </div>"
+	    }
+    }
+
+
+<br><br>
+
+> **提现列表操作**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/Shop/withdrawalsIdControl/token/409dd822f6b93ceac8abd27d1b78750f](http://www.chaorenyundong.com/?s=/admin/Shop/withdrawalsIdControl/token/409dd822f6b93ceac8abd27d1b78750f "提现列表操作")
+
+请求方式：GET
+
+参数：   
+`type:类型(1.通过2.不通过)`    
+`1的参数：w_id`    
+`2的参数:w_id、user_id、money`
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **退出登录**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/index/logout](http://www.chaorenyundong.com/?s=/admin/index/logout "退出登录")
+
+请求方式：GET
+
+参数：
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **pad异常设备**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/Pad/PadDamage/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/Pad/PadDamage/token/3409cc5b6793fb2e1b8027885755338b "pad异常设备")
+
+请求方式：GET
+
+说明：   
+故障状态1:经纬度偏移2:屏碎3:没有画面4:触摸失灵5:无法充电6:底座损坏7:充电宝功能损坏8:电源失灵9:离线   
+处理状态 1:报修，2:已修，3:已换新，4:无法修复
+
+参数：
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "fault_id": "19",   ---自增id
+	                "equipment_id": "1",   ---设备id
+	                "user_id": "46",   ---用户id
+	                "create_time": "2017-08-15 19:18:52",   ---启动时间
+	                "status": "1",   ---故障状态
+	                "end_time": "2017-08-15 23:14:01",   ---故障时间
+	                "type": "1",   ---处理状态
+	                "operation_time": null,   ---处理时间
+	                "lng": "116.425144",   ---经度
+	                "lat": "40.067963"   ---纬度
+	            },
+	            {
+	                "fault_id": "20",
+	                "equipment_id": "1",
+	                "user_id": "46",
+	                "create_time": "2017-08-15 19:18:52",
+	                "status": "1",
+	                "end_time": "2017-08-15 23:14:01",
+	                "type": "1",
+	                "operation_time": null,
+	                "lng": "116.425144",
+	                "lat": "40.067963"
+	            },
+	            {
+	                "fault_id": "21",
+	                "equipment_id": "1",
+	                "user_id": "46",
+	                "create_time": "2017-08-15 19:18:52",
+	                "status": "1",
+	                "end_time": "2017-08-15 23:14:01",
+	                "type": "1",
+	                "operation_time": null,
+	                "lng": "116.425144",
+	                "lat": "40.067963"
+	            },
+	            {
+	                "fault_id": "22",
+	                "equipment_id": "1",
+	                "user_id": "46",
+	                "create_time": "2017-08-15 19:18:52",
+	                "status": "1",
+	                "end_time": "2017-08-15 23:14:01",
+	                "type": "1",
+	                "operation_time": null,
+	                "lng": "116.425144",
+	                "lat": "40.067963"
+	            },
+	            {
+	                "fault_id": "23",
+	                "equipment_id": "1",
+	                "user_id": "46",
+	                "create_time": "2017-08-15 19:18:52",
+	                "status": "1",
+	                "end_time": "2017-08-15 23:14:01",
+	                "type": "1",
+	                "operation_time": null,
+	                "lng": "116.425144",
+	                "lat": "40.067963"
+	            },
+	            {
+	                "fault_id": "24",
+	                "equipment_id": "1",
+	                "user_id": "46",
+	                "create_time": "2017-08-15 19:18:52",
+	                "status": "1",
+	                "end_time": "2017-08-15 23:14:01",
+	                "type": "1",
+	                "operation_time": null,
+	                "lng": "116.425144",
+	                "lat": "40.067963"
+	            }
+	        ],
+	        "page": "<div>    </div>"
+	    }
     }
