@@ -85,12 +85,22 @@ class ManagerController extends RuleController{
     public function addRole(){
         if(!IS_POST) return Helper::response(Status::FAIL,'无效的传值方式Method');
         $role_name = $_POST['role_name'];
+        $node = explode(',',$_POST['node']);
         if(empty($role_name)) return Helper::response(Status::FAIL,'检测到为空的参数');
         $role = M("admin_role");
         $count = $role->where('role_name='.$role_name)->count();
         if($count>0) return Helper::response(Status::FAIL,'请勿重复添加');
         $data['role_name'] = $role_name;
-        if($id = $role->add($data)) return Helper::response(Status::SUCCESS,$id);
+        if($id = $role->add($data)){
+            $admin_role_node = M("admin_role_node");
+            $arr = array();
+            foreach($node as $key=>$v){
+                $arr[$key]['role_id'] = $id;
+                $arr[$key]['node_id'] = $v;
+            }
+            if($admin_role_node->addAll($arr)) return Helper::response(Status::SUCCESS,$id);
+            return Helper::response(Status::FAIL,null);
+        }
         return Helper::response(Status::FAIL,null);
     }
 
