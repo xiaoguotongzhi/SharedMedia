@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1320c64a-cca0-4724-8e9c-68a201bfa0a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.md" afterPath="$PROJECT_DIR$/api.md" />
     </list>
     <ignored path="SharedMedia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +31,11 @@
       <file leaf-file-name="ManagerController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="103" column="51" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+            <state relative-caret-position="573">
+              <caret line="414" column="43" selection-start-line="414" selection-start-column="43" selection-end-line="414" selection-end-column="43" />
               <folding>
-                <marker date="1503485915227" expanded="true" signature="12944:13265" placeholder="select admin... admin_user" />
-                <marker date="1503485915227" expanded="true" signature="13422:13459" placeholder="SELECT * FRO... admin_node" />
+                <marker date="1503538928018" expanded="true" signature="12940:13261" placeholder="select admin... admin_user" />
+                <marker date="1503538928018" expanded="true" signature="13418:13455" placeholder="SELECT * FRO... admin_node" />
               </folding>
             </state>
           </provider>
@@ -322,12 +322,12 @@
       <workItem from="1503281499265" duration="16470000" />
       <workItem from="1503368504870" duration="14439000" />
       <workItem from="1503452062990" duration="1764000" />
-      <workItem from="1503483750862" duration="1694000" />
+      <workItem from="1503483750862" duration="4508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79825000" />
+    <option name="totallyTimeSpent" value="82639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -585,11 +585,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="103" column="51" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+        <state relative-caret-position="573">
+          <caret line="414" column="43" selection-start-line="414" selection-start-column="43" selection-end-line="414" selection-end-column="43" />
           <folding>
-            <marker date="1503485915227" expanded="true" signature="12944:13265" placeholder="select admin... admin_user" />
-            <marker date="1503485915227" expanded="true" signature="13422:13459" placeholder="SELECT * FRO... admin_node" />
+            <marker date="1503538928018" expanded="true" signature="12940:13261" placeholder="select admin... admin_user" />
+            <marker date="1503538928018" expanded="true" signature="13418:13455" placeholder="SELECT * FRO... admin_node" />
           </folding>
         </state>
       </provider>

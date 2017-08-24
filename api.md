@@ -756,14 +756,12 @@ post参数（可选）：
 
 > **属于当前用户的权限菜单列表**
 
-地址：[http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b "属于当前用户的权限菜单列表")
+地址：[http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b/username/123456789](http://www.chaorenyundong.com/?s=/admin/manager/UserHaveMenuLists/token/3409cc5b6793fb2e1b8027885755338b/username/123456789 "属于当前用户的权限菜单列表")
 
 请求方式：GET
 
-说明：每页数据为10条，当总数据小于10条时，page中只会给一个空的div标签，只有当总数大于10的时候，才会给出完整的分页标签
-
 参数：   
-`role_id:职位id`
+`username:用户名`
 
 接口返回：
 

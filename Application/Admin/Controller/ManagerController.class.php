@@ -395,7 +395,7 @@ class ManagerController extends RuleController{
     public function UserHaveMenuLists()
     {
         //查询一级菜单
-        $username = $_SESSION['username'];
+        $username = $_GET['username'];
         $sql="select admin_node.* from admin_user,admin_user_role,admin_role_node,admin_node
                 where admin_user.id=admin_user_role.user_id
                 and admin_user_role.role_id=admin_role_node.node_id
