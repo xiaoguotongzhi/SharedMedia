@@ -1080,3 +1080,211 @@ post参数（可选）：
 	        "page": "<div>    </div>"
 	    }
     }
+
+
+<br><br>
+
+> **新增广告**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/AddNewBanner/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/banner/AddNewBanner/token/3409cc5b6793fb2e1b8027885755338b "新增广告")
+
+请求方式：POST
+
+参数：   
+`html_url:页面地址`   
+`banner_order:广告排序`    
+`img:图片`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": 1
+    }
+
+
+<br><br>
+
+> **广告序号验证**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/OrderYz/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1](http://www.chaorenyundong.com/?s=/admin/banner/OrderYz/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1 "广告序号验证")
+
+请求方式：GET
+
+参数：    
+`banner_order:广告序号`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": "验证通过"
+    }
+
+<br><br>
+
+> **广告详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/BannerInfo/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/banner/BannerInfo/token/3409cc5b6793fb2e1b8027885755338b "广告详情")
+
+请求方式：GET
+
+参数：    
+`banner_order:广告序号`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "id": "12",
+	                "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/3261488273517.png",
+	                "html_url": "1",
+	                "status": "1",
+	                "create_time": "1488273519",
+	                "update_time": "1490947682",
+	                "banner_order": "2"
+	            },
+	            {
+	                "id": "13",
+	                "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/884561488273540.png",
+	                "html_url": "2",
+	                "status": "1",
+	                "create_time": "1488273540",
+	                "update_time": "1490947690",
+	                "banner_order": "3"
+	            },
+	            {
+	                "id": "14",
+	                "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/785431488273561.png",
+	                "html_url": "3",
+	                "status": "1",
+	                "create_time": "1488273561",
+	                "update_time": "1490947700",
+	                "banner_order": "4"
+	            },
+	            {
+	                "id": "16",
+	                "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/663971491537303.jpg",
+	                "html_url": "1",
+	                "status": "1",
+	                "create_time": "1491537303",
+	                "update_time": null,
+	                "banner_order": "5"
+	            },
+	            {
+	                "id": "17",
+	                "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/439941497254594.jpg",
+	                "html_url": "http://www.qinqinchong.com/partner/source/chongtaapp",
+	                "status": "1",
+	                "create_time": "1497254594",
+	                "update_time": null,
+	                "banner_order": "1"
+	            }
+	        ],
+	        "page": "<div>    </div>"
+	    }
+    }
+
+
+<br><br>
+
+> **修改广告序号排序**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/AdminOrderSave/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1/id/1](http://www.chaorenyundong.com/?s=/admin/banner/AdminOrderSave/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1/id/1 "修改广告序号排序")
+
+请求方式：GET
+
+参数：    
+`banner_order:广告序号`    
+`id:自增id`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **根据id查看广告详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/EditBannerIdInfo/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/EditBannerIdInfo/token/3409cc5b6793fb2e1b8027885755338b/id/1 "根据id查看广告详情")
+
+请求方式：GET
+
+参数：    
+`id:自增id`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "id": "12",
+	        "img": "http://peita.oss-cn-beijing.aliyuncs.com/question/3261488273517.png",
+	        "html_url": "1",
+	        "status": "1",
+	        "create_time": "2017-02-28 17:18:39",
+	        "update_time": "2017-02-28 17:18:39",
+	        "banner_order": "2"
+	    }
+    }
+
+
+<br><br>
+
+> **广告修改**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/EditBanner/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/EditBanner/token/3409cc5b6793fb2e1b8027885755338b/id/1 "广告修改")
+
+请求方式：GET/POST
+
+参数：    
+`id:自增id` get传值     
+post传值    
+`html_url:网页链接`   
+`status:状态是否显示  1.显示2.不显示`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+<br><br>
+
+> **根据id删除广告**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/banner/BannerIdDel/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/BannerIdDel/token/3409cc5b6793fb2e1b8027885755338b/id/1 "广告修改")
+
+请求方式：GET/POST
+
+参数：    
+`id:自增id` get传值     
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
