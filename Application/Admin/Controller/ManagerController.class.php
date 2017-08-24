@@ -424,7 +424,7 @@ class ManagerController extends RuleController{
         $username = $_GET['username'];
         $sql="select admin_node.* from admin_user,admin_user_role,admin_role_node,admin_node
                 where admin_user.id=admin_user_role.user_id
-                and admin_user_role.role_id=admin_role_node.node_id
+                and admin_user_role.role_id=admin_role_node.role_id
                 and admin_role_node.node_id=admin_node.node_id
                 and admin_user.username='$username'";
         $db3=D();
