@@ -1084,7 +1084,7 @@ post参数（可选）：
 
 <br><br>
 
-> **新增广告**
+> **新增轮播**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/AddNewBanner/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/banner/AddNewBanner/token/3409cc5b6793fb2e1b8027885755338b "新增广告")
 
@@ -1107,7 +1107,7 @@ post参数（可选）：
 
 <br><br>
 
-> **广告序号验证**
+> **轮播序号验证**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/OrderYz/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1](http://www.chaorenyundong.com/?s=/admin/banner/OrderYz/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1 "广告序号验证")
 
@@ -1127,7 +1127,7 @@ post参数（可选）：
 
 <br><br>
 
-> **广告详情**
+> **轮播详情**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/BannerInfo/token/3409cc5b6793fb2e1b8027885755338b](http://www.chaorenyundong.com/?s=/admin/banner/BannerInfo/token/3409cc5b6793fb2e1b8027885755338b "广告详情")
 
@@ -1197,7 +1197,7 @@ post参数（可选）：
 
 <br><br>
 
-> **修改广告序号排序**
+> **修改轮播序号排序**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/AdminOrderSave/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1/id/1](http://www.chaorenyundong.com/?s=/admin/banner/AdminOrderSave/token/3409cc5b6793fb2e1b8027885755338b/banner_order/1/id/1 "修改广告序号排序")
 
@@ -1219,7 +1219,7 @@ post参数（可选）：
 
 <br><br>
 
-> **根据id查看广告详情**
+> **根据id查看轮播详情**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/EditBannerIdInfo/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/EditBannerIdInfo/token/3409cc5b6793fb2e1b8027885755338b/id/1 "根据id查看广告详情")
 
@@ -1248,7 +1248,7 @@ post参数（可选）：
 
 <br><br>
 
-> **广告修改**
+> **轮播修改**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/EditBanner/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/EditBanner/token/3409cc5b6793fb2e1b8027885755338b/id/1 "广告修改")
 
@@ -1271,7 +1271,7 @@ post传值
 
 <br><br>
 
-> **根据id删除广告**
+> **根据id删除轮播**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/banner/BannerIdDel/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/banner/BannerIdDel/token/3409cc5b6793fb2e1b8027885755338b/id/1 "广告修改")
 
