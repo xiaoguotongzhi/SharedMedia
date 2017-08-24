@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1320c64a-cca0-4724-8e9c-68a201bfa0a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
     </list>
     <ignored path="SharedMedia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,25 +27,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ManagerController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ManagerController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="414" column="43" selection-start-line="414" selection-start-column="43" selection-end-line="414" selection-end-column="43" />
+            <state relative-caret-position="439">
+              <caret line="225" column="59" selection-start-line="225" selection-start-column="59" selection-end-line="225" selection-end-column="59" />
               <folding>
-                <marker date="1503538928018" expanded="true" signature="12940:13261" placeholder="select admin... admin_user" />
-                <marker date="1503538928018" expanded="true" signature="13418:13455" placeholder="SELECT * FRO... admin_node" />
+                <marker date="1503542447216" expanded="true" signature="14101:14422" placeholder="select admin... admin_user" />
+                <marker date="1503542447216" expanded="true" signature="14579:14616" placeholder="SELECT * FRO... admin_node" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +63,8 @@
         <option value="$PROJECT_DIR$/Application/Common/Common/PageTest.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
       </list>
     </option>
   </component>
@@ -331,12 +321,12 @@
       <workItem from="1503281499265" duration="16470000" />
       <workItem from="1503368504870" duration="14439000" />
       <workItem from="1503452062990" duration="1764000" />
-      <workItem from="1503483750862" duration="4769000" />
+      <workItem from="1503483750862" duration="6562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82900000" />
+    <option name="totallyTimeSpent" value="84693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -585,22 +575,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="414" column="43" selection-start-line="414" selection-start-column="43" selection-end-line="414" selection-end-column="43" />
-          <folding>
-            <marker date="1503538928018" expanded="true" signature="12940:13261" placeholder="select admin... admin_user" />
-            <marker date="1503538928018" expanded="true" signature="13418:13455" placeholder="SELECT * FRO... admin_node" />
-          </folding>
+        <state relative-caret-position="-359">
+          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="439">
+          <caret line="225" column="59" selection-start-line="225" selection-start-column="59" selection-end-line="225" selection-end-column="59" />
+          <folding>
+            <marker date="1503542447216" expanded="true" signature="14101:14422" placeholder="select admin... admin_user" />
+            <marker date="1503542447216" expanded="true" signature="14579:14616" placeholder="SELECT * FRO... admin_node" />
+          </folding>
         </state>
       </provider>
     </entry>

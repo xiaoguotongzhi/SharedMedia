@@ -313,43 +313,69 @@ class ManagerController extends RuleController{
      * 修改职位权限
      * */
     public function editIdNode(){
+        $role_id = $_POST['role_id']?$_POST['role_id']:null;
+        $role_name = $_POST['role_name']?$_POST['role_name']:null;
+        $node = empty($_POST['node'])?null:explode(',',$_POST['node']);
+        if(empty($role_id) || empty($role_name) || empty($node)) return Helper::response(Status::FAIL,'检测到为空的参数');
 
-        $type = $_POST['type']?$_POST['type']:null;
-
-        if($type==1){
-
-            $role_id = $_POST['role_id']?$_POST['role_id']:null;
-            $role_name = $_POST['role_name']?$_POST['role_name']:null;
-            if(empty($role_id) || empty($role_name)) return Helper::response(Status::FAIL,'检测到为空的参数');
+        $admin_role = M("admin_role");
+        $admin_role_data = $admin_role->where('role_id='.$role_id)->find();
+        if($role_name!=$admin_role_data['role_name']){
             $data['role_name'] = $role_name;
-            if(M("admin_role")->where('role_id='.$role_id)->save($data)) return Helper::response(Status::SUCCESS,null);
-            return Helper::response(Status::FAIL,null);
+            $admin_role->where('role_id='.$role_id)->save($data);
+        }
 
-        }elseif ($type==2){
-            $role_id = $_POST['role_id']?$_POST['role_id']:null;
-            $node = explode(',',$_POST['node']);
-            if(empty($role_id) || empty($node)) return Helper::response(Status::FAIL,'检测到为空的参数');
-            if(M("admin_role_node")->where('role_id='.$role_id)->delete()){
-                $arr = array();
-                foreach ($node as $key=>$val){
-                    $arr[$key]['role_id'] = $role_id;
-                    $arr[$key]['node_id'] = $val;
-                }
-
-                if(M("admin_role_node")->addAll($arr)){
-                    return Helper::response(Status::SUCCESS,null);
-                }else{
-                    return Helper::response(Status::FAIL,null);
-                }
-
-            }else{
-                return Helper::response(Status::FAIL,null);
+        if(M("admin_role_node")->where('role_id='.$role_id)->delete()) {
+            $arr = array();
+            foreach ($node as $key => $val) {
+                $arr[$key]['role_id'] = $role_id;
+                $arr[$key]['node_id'] = $val;
             }
 
-
-        }else{
-            return Helper::response(Status::FAIL,'未定义的状态');
+            if (M("admin_role_node")->addAll($arr)) {
+                return Helper::response(Status::SUCCESS, null);
+            } else {
+                return Helper::response(Status::FAIL, null);
+            }
         }
+
+
+        //$type = $_POST['type']?$_POST['type']:null;
+
+//        if($type==1){
+//
+//            $role_id = $_POST['role_id']?$_POST['role_id']:null;
+//            $role_name = $_POST['role_name']?$_POST['role_name']:null;
+//            if(empty($role_id) || empty($role_name)) return Helper::response(Status::FAIL,'检测到为空的参数');
+//            $data['role_name'] = $role_name;
+//            if(M("admin_role")->where('role_id='.$role_id)->save($data)) return Helper::response(Status::SUCCESS,null);
+//            return Helper::response(Status::FAIL,null);
+//
+//        }elseif ($type==2){
+//            $role_id = $_POST['role_id']?$_POST['role_id']:null;
+//            $node = explode(',',$_POST['node']);
+//            if(empty($role_id) || empty($node)) return Helper::response(Status::FAIL,'检测到为空的参数');
+//            if(M("admin_role_node")->where('role_id='.$role_id)->delete()){
+//                $arr = array();
+//                foreach ($node as $key=>$val){
+//                    $arr[$key]['role_id'] = $role_id;
+//                    $arr[$key]['node_id'] = $val;
+//                }
+//
+//                if(M("admin_role_node")->addAll($arr)){
+//                    return Helper::response(Status::SUCCESS,null);
+//                }else{
+//                    return Helper::response(Status::FAIL,null);
+//                }
+//
+//            }else{
+//                return Helper::response(Status::FAIL,null);
+//            }
+//
+//
+//        }else{
+//            return Helper::response(Status::FAIL,'未定义的状态');
+//        }
 
     }
 
