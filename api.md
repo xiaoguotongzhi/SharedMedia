@@ -1278,7 +1278,7 @@ post传值
 请求方式：GET/POST
 
 参数：    
-`id:自增id` get传值     
+`id:自增id` get传值
 
 
 接口返回：
@@ -1287,4 +1287,82 @@ post传值
 	    "code": 20000,
 	    "msg": "成功",
 	    "data": null
+    }
+
+<br><br>
+
+> **异常设备列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1](http://www.chaorenyundong.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1 "异常设备列表")
+
+请求方式：GET
+
+参数：    
+`page：当前页`
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "abnormal_id": "1",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": null,
+	                "last_num": "100",
+	                "before_num": "20"
+	            },
+	            {
+	                "abnormal_id": "2",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": "",
+	                "last_num": "100",
+	                "before_num": "20"
+	            },
+	            {
+	                "abnormal_id": "3",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": "",
+	                "last_num": "100",
+	                "before_num": "20"
+	            },
+	            {
+	                "abnormal_id": "4",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": "",
+	                "last_num": "100",
+	                "before_num": "20"
+	            },
+	            {
+	                "abnormal_id": "5",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": "",
+	                "last_num": "100",
+	                "before_num": "20"
+	            },
+	            {
+	                "abnormal_id": "6",
+	                "equipment_id": "1",
+	                "abmprmal_time": "2017-08-20 16:21:35",
+	                "img": "",
+	                "last_num": "100",
+	                "before_num": "20"
+	            }
+	        ],
+	        "page": {
+	            "first_page": "http://www.sharedgxf.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a1",
+	            "last_page": "http://www.sharedgxf.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a4",
+	            "current_page": "http://www.sharedgxf.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a1",
+	            "previous_page": "http://www.sharedgxf.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a1",
+	            "next_page": "http://www.sharedgxf.com/?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a2"
+	        }
+	    }
     }

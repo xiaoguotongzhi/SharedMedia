@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1320c64a-cca0-4724-8e9c-68a201bfa0a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.md" afterPath="$PROJECT_DIR$/api.md" />
     </list>
     <ignored path="SharedMedia.iws" />
@@ -29,14 +28,14 @@
     <favorites_list name="SharedMedia" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BannerController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="PadController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+            <state relative-caret-position="589">
+              <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               <folding>
-                <element signature="e#34#57#0#PHP" expanded="true" />
+                <element signature="e#34#55#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,10 +63,10 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/RuleController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Common/PageTest.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" />
       </list>
     </option>
   </component>
@@ -325,19 +324,20 @@
       <workItem from="1503281499265" duration="16470000" />
       <workItem from="1503368504870" duration="14439000" />
       <workItem from="1503452062990" duration="1764000" />
-      <workItem from="1503483750862" duration="15491000" />
+      <workItem from="1503483750862" duration="18578000" />
+      <workItem from="1503885722316" duration="3554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93622000" />
+    <option name="totallyTimeSpent" value="100263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24624464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.08530043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -372,6 +372,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -580,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
           <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,22 +612,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+        <state relative-caret-position="163">
+          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
           <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#34#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+        <state relative-caret-position="589">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
+            <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
