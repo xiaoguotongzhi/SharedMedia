@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Common\Common\Page;
 use Think\Controller;
 
 use Common\Common\Helper;
@@ -14,8 +15,19 @@ class ShopController extends RuleController{
      * 商家列表
      * */
     public function ShoperList(){
+        $http = 'http://';
+        $server_name = $_SERVER['SERVER_NAME'];
+        $request_uri = $_SERVER["REQUEST_URI"];
+        $url = $http.$server_name.substr($request_uri,0,strlen($request_uri)-1);
+        $page = empty($_GET['page'])?1:$_GET['page'];
+
         $user = M("user");
-        $data = $user->field('id,equipment_num,money_count')->select();
+        $count = $user->count();
+        $page_size = 6;
+        $last_num = ceil($count/$page_size);
+        $page_limit = ($page-1)*$page_size;
+        $data = $user->field('id,equipment_num,money_count')->limit($page_limit,$page_size)->select();
+
         $equipment = M("equipment");
         foreach($data as $key=>$val){
             $count = $equipment->field('sum(looking_num),sum(order_num)')->where('shop_id='.$val['id'])->find();
@@ -25,13 +37,27 @@ class ShopController extends RuleController{
             $data[$key]['order_num'] = $order_num;
         }
 
-        $count=count($data);
-        $Page=new \Think\Page($count,10);
-        $show       = $Page->show();
-        $list=array_slice($data,$Page->firstRow,$Page->listRows);
+        //页数
+        $paging['first_page'] = $url.'1';
+        $paging['last_page'] = $url.$last_num;
+        $paging['current_page'] = $url.$page;
+        if($page==1){
+            $paging['previous_page'] = $url.$page;
+        }else{
+            $n = $page-1;
+            $paging['previous_page'] = $url.$n;
+        }
 
-        $res['list'] = $list;
-        $res['page'] = $show;
+        if($page==$last_num){
+            $paging['next_page'] = $url.$page;
+        }else{
+            $n = $page+1;
+            $paging['next_page'] = $url.$n;
+        }
+
+        //返回
+        $res['list'] = $data;
+        $res['page'] = $paging;
 
         return Helper::response(Status::SUCCESS,$res);
     }
@@ -52,17 +78,40 @@ class ShopController extends RuleController{
      * 提现申请
      * */
     public function withdrawalsLists(){
+        $page = empty($_GET['page'])?1:$_GET['page'];
+        $http = 'http://';
+        $server_name = $_SERVER['SERVER_NAME'];
+        $request_uri = $_SERVER["REQUEST_URI"];
+        $url = $http.$server_name.substr($request_uri,0,strlen($request_uri)-1);
+
         $withdrawals = M("withdrawals");
-        $data = $withdrawals->field('withdrawals.w_id,withdrawals.money,withdrawals.create_time,withdrawals.create_ip,withdrawals.user_id,withdrawals.status,withdrawals.card_name,user.username,user.shop_name')->join('user ON withdrawals.user_id=user.id')->select();
+        $count = $withdrawals->join('user ON withdrawals.user_id=user.id')->count();
+        $page_size = 6;
+        $last_num = ceil($count/$page_size);
+        $page_limit = ($page-1)*$page_size;
+        $data = $withdrawals->field('withdrawals.w_id,withdrawals.money,withdrawals.create_time,withdrawals.create_ip,withdrawals.user_id,withdrawals.status,withdrawals.card_name,user.username,user.shop_name')->join('user ON withdrawals.user_id=user.id')->limit($page_limit,$page_size)->select();
 
-        $count=count($data);
-        $Page=new \Think\Page($count,10);
-        $show       = $Page->show();
-        $list=array_slice($data,$Page->firstRow,$Page->listRows);
+        //页数
+        $paging['first_page'] = $url.'1';
+        $paging['last_page'] = $url.$last_num;
+        $paging['current_page'] = $url.$page;
+        if($page==1){
+            $paging['previous_page'] = $url.$page;
+        }else{
+            $n = $page-1;
+            $paging['previous_page'] = $url.$n;
+        }
 
-        $res['list'] = $list;
-        $res['page'] = $show;
+        if($page==$last_num){
+            $paging['next_page'] = $url.$page;
+        }else{
+            $n = $page+1;
+            $paging['next_page'] = $url.$n;
+        }
 
+        //返回
+        $res['list'] = $data;
+        $res['page'] = $paging;
         return Helper::response(Status::SUCCESS,$res);
     }
 

@@ -1,0 +1,297 @@
+[ 2017-08-29T09:33:07+08:00 ] 127.0.0.1 /?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `abnormal` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `abnormal` LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `abnormal` LIMIT 0,6   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 87 行.
+
+[ 2017-08-29T09:38:19+08:00 ] 127.0.0.1 /?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `abnormal` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `abnormal` LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `abnormal` LIMIT 0,6   [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 87 行.
+
+[ 2017-08-29T09:38:31+08:00 ] 127.0.0.1 /?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `abnormal` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `abnormal` LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `abnormal` LIMIT 18,6   [ RunTime:0.005001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 87 行.
+
+[ 2017-08-29T09:47:06+08:00 ] 127.0.0.1 /?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `abnormal` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `abnormal` LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `abnormal` LIMIT 18,6   [ RunTime:0.004001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 87 行.
+
+[ 2017-08-29T10:58:42+08:00 ] 127.0.0.1 /?s=/admin/pad/abnormalLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `abnormal` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `abnormal` LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `abnormal` LIMIT 18,6   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 87 行.
+
+[ 2017-08-29T14:13:17+08:00 ] 127.0.0.1 /?s=/admin/pad/PadDamage/token/b7caabc99301d9448e9bbc14fa9660a7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `fault` ORDER BY end_time desc  [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 39 行.
+
+[ 2017-08-29T14:15:11+08:00 ] 127.0.0.1 /?s=/admin/pad/PadDamage/token/b7caabc99301d9448e9bbc14fa9660a7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fault` LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fault` ORDER BY end_time desc LIMIT 0,6   [ RunTime:0.005001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 64 行.
+
+[ 2017-08-29T14:15:28+08:00 ] 127.0.0.1 /?s=/admin/pad/PadDamage/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fault` LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT * FROM `fault` ORDER BY end_time desc LIMIT 0,6   [ RunTime:0.006000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 64 行.
+
+[ 2017-08-29T14:18:00+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006001s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:07+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:34+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:36+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:36+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:36+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.007000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:36+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.008001s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:37+08:00 ] 127.0.0.1 /?s=/admin/pad/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+ERR: 非法操作:ShoperList
+
+[ 2017-08-29T14:18:49+08:00 ] 127.0.0.1 /?s=/admin/shop/ShoperList/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT `id`,`equipment_num`,`money_count` FROM `user` LIMIT 0,6   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `equipment` [ RunTime:0.006000s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=46 ) LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=55 ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=56 ) LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=57 ) LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=58 ) LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT sum(looking_num),sum(order_num) FROM `equipment` WHERE ( shop_id=59 ) LIMIT 1   [ RunTime:0.006000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ShopController.class.php 第 61 行.
+
+[ 2017-08-29T14:28:54+08:00 ] 127.0.0.1 /?s=/admin/shop/withdrawalsLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `withdrawals` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawals` INNER JOIN user ON withdrawals.user_id=user.id  LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT withdrawals.w_id,withdrawals.money,withdrawals.create_time,withdrawals.create_ip,withdrawals.user_id,withdrawals.status,withdrawals.card_name,user.username,user.shop_name FROM `withdrawals` INNER JOIN user ON withdrawals.user_id=user.id  LIMIT 0,6   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ShopController.class.php 第 115 行.
+
+[ 2017-08-29T14:29:09+08:00 ] 127.0.0.1 /?s=/admin/shop/withdrawalsLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `withdrawals` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawals` INNER JOIN user ON withdrawals.user_id=user.id  LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT withdrawals.w_id,withdrawals.money,withdrawals.create_time,withdrawals.create_ip,withdrawals.user_id,withdrawals.status,withdrawals.card_name,user.username,user.shop_name FROM `withdrawals` INNER JOIN user ON withdrawals.user_id=user.id  LIMIT 6,6   [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ShopController.class.php 第 115 行.
+
+[ 2017-08-29T14:35:41+08:00 ] 127.0.0.1 /?s=/admin/banner/BannerInfo/token/b7caabc99301d9448e9bbc14fa9660a7&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `banner` LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `banner` LIMIT 6,6   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\BannerController.class.php 第 91 行.
+
+[ 2017-08-29T14:36:17+08:00 ] 127.0.0.1 /?s=/admin/banner/BannerInfo/token/b7caabc99301d9448e9bbc14fa9660a7&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `banner` LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `banner` LIMIT 0,6   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\BannerController.class.php 第 91 行.
+

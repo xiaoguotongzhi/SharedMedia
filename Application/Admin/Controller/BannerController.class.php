@@ -75,17 +75,12 @@ class BannerController extends RuleController{
      * */
     public function BannerInfo()
     {
+        $page = empty($_GET['page'])?1:$_GET['page'];
+        $table = 'banner';
+        $model = new Page();
+        $data = $model->show_page($table,$page);
 
-        $model = M("banner");
-        $data = $model->select();
-        $count = count($data);
-        $Page = new \Think\Page($count,10);
-        $show = $Page->show();
-        $list=array_slice($data,$Page->firstRow,$Page->listRows);
-        $res['list'] = $list;
-        $res['page'] = $show;
-
-        return Helper::response(Status::SUCCESS,$res);
+        return Helper::response(Status::SUCCESS,$data);
     }
 
     /*
