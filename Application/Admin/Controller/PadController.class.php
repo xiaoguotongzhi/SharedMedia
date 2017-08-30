@@ -9,6 +9,28 @@ header('Access-Control-Allow-origin:*');
 header('Access-Control-Allow-Credentials:true');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers:Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With');
+
+
+require './ThinkPHP/Library/Vendor/Push/IGt.Batch.php';
+/*Push_Start*/
+header("Content-Type: text/html; charset=utf-8");
+
+//http的域名
+define('HOST','http://sdk.open.api.igexin.com/apiex.htm');
+
+//https的域名
+//define('HOST','https://api.getui.com/apiex.htm');
+
+//生产环境
+//define('APPKEY','F4PBi3IJTqA1cVX5gRvbO5');
+//define('APPID','mFSW4is4PU8ZBO0MheyAtA');
+//define('MASTERSECRET','pwRvXYXUxg7xwY5D4M5LA3');
+
+//开发环境
+define('APPKEY','EDP5zovj329wHPEnKN3Sc2');
+define('APPID','lrDptagIl5AGX9IQnTt9J4');
+define('MASTERSECRET','5drFFjPECs97nrzxlt1mw2');
+/*Push_End*/
 class PadController extends RuleController{
     /*
      * 故障pad列表
@@ -110,5 +132,71 @@ class PadController extends RuleController{
         $res['page'] = $paging;
 
         return Helper::response(Status::SUCCESS,$res);
+    }
+
+    /*
+     * 排除异常设备
+     * */
+    public function IdDelAbnormal(){
+        $id = $_GET['id'];
+        if(empty($id)) return Helper::response(Status::FAIL,'检测到为空的字段');
+        if(M('abnormal')->where('abnormal_id='.$id)->delete()) return Helper::response(Status::SUCCESS,null);
+        return Helper::response(Status::FAIL,null);
+    }
+
+    /*
+     * 异常设备---获取图像
+     * */
+    public function AbnormalGetImg(){
+        $equipment_id = $_GET['equipment_id']?$_GET['equipment_id']:null;
+        if(empty($equipment_id)) return Helper::response(Status::FAIL,'检测到为空的字段');
+        $shopInfo = M('fault')->field('user_id')->where('equipment_id='.$equipment_id)->find();
+        $user_id = $shopInfo['user_id'];
+        $userInfo = M('user')->field('cid')->where('id='.$user_id)->find();
+        $cid = $userInfo['cid'];
+        if(empty($cid)) return Helper::response(Status::FAIL,'检测不到cid');
+
+        $title = '获取截图';
+        $content = json_encode(['code'=>1]);
+        //实例化个推
+        $igt = new \IGeTui(HOST,APPKEY,MASTERSECRET);
+        //要发送的消息内容
+        //$template = $this->IGtLinkTemplateTest();
+        $template = D("Push")->IGtTransmissionTemplateDemo($title,$content);
+        //个推信息体
+        //基于应用消息体
+        $message = new \IGtAppMessage();
+        $message->set_isOffline(true);
+        $message->set_offlineExpireTime(10*60*1000);
+        $message->set_data($template);
+
+        //接收方
+        $target = new \IGtTarget();
+        $target->set_appId(APPID);
+        $target->set_clientId($cid);
+        $rep = $igt->pushMessageToSingle($message, $target);
+
+        if($rep['result'] && $rep['result']=='ok'){
+            return Helper::response(Status::SUCCESS,'获取图像指令发送成功');
+        }else{
+            return Helper::response(Status::FAIL,'获取图像指令发送失败');
+        }
+
+    }
+
+
+    /*
+     * 异常设备--查看图像
+     * */
+    public function SeleImg(){
+        $id = $_GET['id']?$_GET['id']:null;
+        if(empty($id)) return Helper::response(Status::FAIL,'检测到为空的字段');
+        $imgs = M("abnormal")->field('img')->where('abnormal_id='.$id)->find();
+        if(!empty($imgs['img'])){
+            $data = explode(',',$imgs['img']);
+        }else{
+            $data = null;
+        }
+        return Helper::response(Status::SUCCESS,$data);
     }
 }

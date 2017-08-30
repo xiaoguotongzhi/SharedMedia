@@ -1366,3 +1366,63 @@ post传值
 	        }
 	    }
     }
+
+
+<br><br>
+
+> **排除异常设备**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/pad/IdDelAbnormal/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/pad/IdDelAbnormal/token/3409cc5b6793fb2e1b8027885755338b/id/1 "排除异常设备")
+
+请求方式：GET
+
+参数：    
+`id:自增id` get传值
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+<br><br>
+
+> **异常设备---获取图像**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b/equipment_id/1](http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b/equipment_id/1 "异常设备---获取图像")
+
+请求方式：GET
+
+参数：    
+`equipment_id:设备id` get传值
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": "获取图像指令发送成功"
+    }
+
+
+> **异常设备---查看图像**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/pad/SeleImg/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/pad/SeleImg/token/3409cc5b6793fb2e1b8027885755338b/id/1 "异常设备---查看图像")
+
+请求方式：GET     
+
+参数：    
+`id:自增id` get传值
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
