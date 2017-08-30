@@ -1409,6 +1409,8 @@ post传值
     }
 
 
+<br><br>
+
 > **异常设备---查看图像**
 
 地址：[http://www.chaorenyundong.com/?s=/admin/pad/SeleImg/token/3409cc5b6793fb2e1b8027885755338b/id/1](http://www.chaorenyundong.com/?s=/admin/pad/SeleImg/token/3409cc5b6793fb2e1b8027885755338b/id/1 "异常设备---查看图像")
@@ -1417,6 +1419,128 @@ post传值
 
 参数：    
 `id:自增id` get传值
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **广告审核列表**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1](http://www.chaorenyundong.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1 "广告审核列表")
+
+请求方式：GET     
+
+说明：status（1待审核，2成功，3失败，4资金不足）
+
+参数：    
+`page:当前页` 
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": {
+	        "list": [
+	            {
+	                "a_id": "2",
+	                "user_id": "1",
+	                "create_time": "2017-08-15 19:18:52",
+	                "imgs": "1.jpg",
+	                "video": "http://test.520m.com.cn:2000/video/f6a4a5e6bac88a0685f55f9a9f8b1914.mp4",
+	                "video_img": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1130600584,3885612345&fm=173&s=2A104587D643810363BC649B03008040&w=600&h=2312&img.JPEG",
+	                "browser": "127",
+	                "status": "2",
+	                "fail_reason": null
+	            },
+	            {
+	                "a_id": "4",
+	                "user_id": "1",
+	                "create_time": "2017-08-15 19:18:52",
+	                "imgs": null,
+	                "video": "http://test.520m.com.cn:2000/video/f23c6a70f200d1c1f43f670e2ee286bc.mp4",
+	                "video_img": "http://pic.qjimage.com/ph030/high/ph1676-p00084.jpg",
+	                "browser": null,
+	                "status": "1",
+	                "fail_reason": null
+	            }
+	        ],
+	        "page": {
+	            "first_page": "http://www.sharedgxf.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1",
+	            "last_page": "http://www.sharedgxf.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1",
+	            "current_page": "http://www.sharedgxf.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1",
+	            "previous_page": "http://www.sharedgxf.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1",
+	            "next_page": "http://www.sharedgxf.com/?s=/admin/active/AdvertisingAuditLists/token/b7caabc99301d9448e9bbc14fa9660a7&page=1"
+	        }
+	    }
+    }
+
+<br><br>
+
+> **广告审核---点击查看图片详情**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/active/ImgInfo/token/b7caabc99301d9448e9bbc14fa9660a7&a_id=2](http://www.chaorenyundong.com/?s=/admin/active/ImgInfo/token/b7caabc99301d9448e9bbc14fa9660a7&a_id=2 "点击查看图片详情")
+
+请求方式：GET     
+
+参数：    
+`a_id:自增id` 
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": [
+	        "1.jpg",
+	        "2.jpg",
+	        "3.jpg"
+	    ]
+    }
+
+
+<br><br>
+
+> **广告审核---通过**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/active/activeOk/token/b7caabc99301d9448e9bbc14fa9660a7&a_id=2](http://www.chaorenyundong.com/?s=/admin/active/ImgInfo/token/b7caabc99301d9448e9bbc14fa9660a7&a_id=2 "广告审核---通过")
+
+请求方式：GET     
+
+参数：    
+`a_id:自增id` 
+
+
+接口返回：
+
+	{
+	    "code": 20000,
+	    "msg": "成功",
+	    "data": null
+    }
+
+
+<br><br>
+
+> **广告审核---不通过**
+
+地址：[http://www.chaorenyundong.com/?s=/admin/active/activeNo/token/b7caabc99301d9448e9bbc14fa9660a7](http://www.chaorenyundong.com/?s=/admin/active/activeNo/token/b7caabc99301d9448e9bbc14fa9660a7 "*广告审核---不通过")
+
+请求方式：POST     
+
+参数：    
+`a_id:自增id`    
+`fail_reason:拒绝理由(不能为空)`
 
 
 接口返回：

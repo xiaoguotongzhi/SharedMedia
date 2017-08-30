@@ -98,12 +98,6 @@ class PadController extends RuleController{
         $last_num = ceil($count/$page_size);
         $page_limit = ($page-1)*$page_size;
         $data = $abnormal->limit($page_limit,$page_size)->select();
-
-        foreach ($data as $key=>$value){
-            if($value['abmprmal_time']){
-                $data[$key]['abmprmal_time'] = date('Y-m-d H:i:s',$value['abmprmal_time']);
-            }
-        }
         //页数
         $paging['first_page'] = $url.'1';
         $paging['last_page'] = $url.$last_num;
