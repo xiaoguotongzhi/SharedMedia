@@ -4,7 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/Application/Admin/Controller/ShopController.class.php" line="34" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1320c64a-cca0-4724-8e9c-68a201bfa0a0" name="Default" comment="" />
+    <list default="true" id="1320c64a-cca0-4724-8e9c-68a201bfa0a0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_08_30.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_08_30.log" />
+    </list>
     <ignored path="SharedMedia.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -51,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
-              <caret line="140" column="41" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="41" />
+              <caret line="140" column="70" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -333,12 +336,12 @@
       <workItem from="1503368504870" duration="14439000" />
       <workItem from="1503452062990" duration="1764000" />
       <workItem from="1503483750862" duration="18578000" />
-      <workItem from="1503885722316" duration="23454000" />
+      <workItem from="1503885722316" duration="24141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120163000" />
+    <option name="totallyTimeSpent" value="120850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
@@ -477,13 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -665,10 +661,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PadController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="140" column="41" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="41" />
+          <caret line="140" column="70" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
           <folding />
         </state>
       </provider>

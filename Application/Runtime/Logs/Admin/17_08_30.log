@@ -560,3 +560,27 @@ SQL: SHOW COLUMNS FROM `active` [ RunTime:0.005000s ]
 SQL: SELECT `imgs` FROM `active` WHERE ( a_id=2 ) LIMIT 1   [ RunTime:0.004000s ]
 NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\ActiveController.class.php 第 84 行.
 
+[ 2017-08-30T17:28:34+08:00 ] 127.0.0.1 /?s=/admin/pad/AbnormalGetImg/token/b7caabc99301d9448e9bbc14fa9660a7/equipment_id/1/abnormal_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.005000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 142 行.
+
+[ 2017-08-30T17:28:59+08:00 ] 127.0.0.1 /?s=/admin/pad/AbnormalGetImg/token/b7caabc99301d9448e9bbc14fa9660a7&equipment_id=1&abnormal_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.004000s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 142 行.
+

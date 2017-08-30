@@ -139,7 +139,7 @@ class PadController extends RuleController{
     public function AbnormalGetImg(){
         $equipment_id = $_GET['equipment_id']?$_GET['equipment_id']:null;
         $abnormal_id = $_GET['abnormal_id']?$_GET['abnormal_id']:null;
-        if(empty($equipment_id) || empty($fault_id)) return Helper::response(Status::FAIL,'检测到为空的字段');
+        if(empty($equipment_id) || empty($abnormal_id)) return Helper::response(Status::FAIL,'检测到为空的字段');
         $shopInfo = M('fault')->field('user_id')->where('equipment_id='.$equipment_id)->find();
         if(empty($shopInfo)) return Helper::response(Status::FAIL,'检测不到用户信息');
         $user_id = $shopInfo['user_id'];
