@@ -1392,12 +1392,13 @@ post传值
 
 > **异常设备---获取图像**
 
-地址：[http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b/equipment_id/1](http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b/equipment_id/1 "异常设备---获取图像")
+地址：[http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b&equipment_id=1&abnormal_id=1](http://www.chaorenyundong.com/?s=/admin/pad/AbnormalGetImg/token/3409cc5b6793fb2e1b8027885755338b&equipment_id=1&abnormal_id=1 "异常设备---获取图像")
 
 请求方式：GET
 
 参数：    
-`equipment_id:设备id` get传值
+`equipment_id:设备id`     
+`abnormal_id:自增id`
 
 
 接口返回：
