@@ -21,15 +21,10 @@ define('HOST','http://sdk.open.api.igexin.com/apiex.htm');
 //https的域名
 //define('HOST','https://api.getui.com/apiex.htm');
 
-//生产环境
-//define('APPKEY','F4PBi3IJTqA1cVX5gRvbO5');
-//define('APPID','mFSW4is4PU8ZBO0MheyAtA');
-//define('MASTERSECRET','pwRvXYXUxg7xwY5D4M5LA3');
-
 //开发环境
-define('APPKEY','EDP5zovj329wHPEnKN3Sc2');
-define('APPID','lrDptagIl5AGX9IQnTt9J4');
-define('MASTERSECRET','5drFFjPECs97nrzxlt1mw2');
+define('APPKEY','KJlJZfUr909SE2Al3lkhb8');
+define('APPID','TlYTbA67c26mrAJwcBua19');
+define('MASTERSECRET','oxwYvAaY7g78ym7EjvelM3');
 /*Push_End*/
 class PadController extends RuleController{
     /*
@@ -151,6 +146,7 @@ class PadController extends RuleController{
         $equipment_id = $_GET['equipment_id']?$_GET['equipment_id']:null;
         if(empty($equipment_id)) return Helper::response(Status::FAIL,'检测到为空的字段');
         $shopInfo = M('fault')->field('user_id')->where('equipment_id='.$equipment_id)->find();
+        if(empty($shopInfo)) return Helper::response(Status::FAIL,'检测不到用户信息');
         $user_id = $shopInfo['user_id'];
         $userInfo = M('user')->field('cid')->where('id='.$user_id)->find();
         $cid = $userInfo['cid'];

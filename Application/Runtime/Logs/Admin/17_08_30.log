@@ -17,3 +17,35 @@ ERR: 1146:Table 'media.push' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `push`
 NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 179 行.
 
+[ 2017-08-30T14:44:47+08:00 ] 127.0.0.1 /?s=/admin/pad/AbnormalGetImg/token/b7caabc99301d9448e9bbc14fa9660a7&equipment_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.006000s ]
+SQL: SELECT `user_id` FROM `fault` WHERE ( equipment_id=2 ) LIMIT 1   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT `cid` FROM `user` WHERE ( id= ) LIMIT 1   [ RunTime:0.005000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `cid` FROM `user` WHERE ( id= ) LIMIT 1  
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 152 行.
+
+[ 2017-08-30T14:47:16+08:00 ] 127.0.0.1 /?s=/admin/pad/AbnormalGetImg/token/b7caabc99301d9448e9bbc14fa9660a7&equipment_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\SharedMedia\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `admin_user` WHERE `token` = 'b7caabc99301d9448e9bbc14fa9660a7' LIMIT 1   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `fault` [ RunTime:0.004000s ]
+SQL: SELECT `user_id` FROM `fault` WHERE ( equipment_id=2 ) LIMIT 1   [ RunTime:0.004001s ]
+NOTIC: [2048] Non-static method Common\Common\Helper::response() should not be called statically, assuming $this from incompatible context E:\SharedMedia\Application\Admin\Controller\PadController.class.php 第 149 行.
+
