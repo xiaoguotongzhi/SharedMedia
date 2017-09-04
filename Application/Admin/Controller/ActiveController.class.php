@@ -44,6 +44,7 @@ class ActiveController extends RuleController{
         }
 
         //页数
+        $paging['count_page'] = $last_num;
         $paging['first_page'] = $url.'1';
         $paging['last_page'] = $url.$last_num;
         $paging['current_page'] = $url.$page;

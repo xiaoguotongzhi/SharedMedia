@@ -57,6 +57,7 @@ class PadController extends RuleController{
         }
 
         //页数
+        $paging['count_page'] = $last_num;
         $paging['first_page'] = $url.'1';
         $paging['last_page'] = $url.$last_num;
         $paging['current_page'] = $url.$page;
@@ -99,6 +100,7 @@ class PadController extends RuleController{
         $page_limit = ($page-1)*$page_size;
         $data = $abnormal->limit($page_limit,$page_size)->select();
         //页数
+        $paging['count_page'] = $last_num;
         $paging['first_page'] = $url.'1';
         $paging['last_page'] = $url.$last_num;
         $paging['current_page'] = $url.$page;
@@ -140,12 +142,13 @@ class PadController extends RuleController{
         $equipment_id = $_GET['equipment_id']?$_GET['equipment_id']:null;
         $abnormal_id = $_GET['abnormal_id']?$_GET['abnormal_id']:null;
         if(empty($equipment_id) || empty($abnormal_id)) return Helper::response(Status::FAIL,'检测到为空的字段');
-        $shopInfo = M('fault')->field('user_id')->where('equipment_id='.$equipment_id)->find();
+        /*$shopInfo = M('fault')->field('user_id')->where('equipment_id='.$equipment_id)->find();
         if(empty($shopInfo)) return Helper::response(Status::FAIL,'检测不到用户信息');
         $user_id = $shopInfo['user_id'];
         $userInfo = M('user')->field('cid')->where('id='.$user_id)->find();
         $cid = $userInfo['cid'];
-        if(empty($cid)) return Helper::response(Status::FAIL,'检测不到cid');
+        if(empty($cid)) return Helper::response(Status::FAIL,'检测不到cid');*/
+        $cid = '4da2d3d190f2b971d9089f90d4a20b47';
 
         $title = '获取截图';
         $content = json_encode(['code'=>1,'fault_id'=>$abnormal_id]);
@@ -189,5 +192,13 @@ class PadController extends RuleController{
             $data = null;
         }
         return Helper::response(Status::SUCCESS,$data);
+    }
+
+
+    //json测试
+    public function JsonTest(){
+        $openids = ['OPENID1','OPENID2'];
+        $res = ['touser'=>$openids,'msgtype'=>'text','text'=>['content'=>'hello from boxer.']];
+        return Helper::response(Status::SUCCESS,$res);
     }
 }
