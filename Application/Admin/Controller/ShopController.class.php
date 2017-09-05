@@ -87,7 +87,7 @@ class ShopController extends RuleController{
 
         $withdrawals = M("withdrawals");
         $count = $withdrawals->join('user ON withdrawals.user_id=user.id')->count();
-        $page_size = 6;
+        $page_size = 8;
         $last_num = ceil($count/$page_size);
         $page_limit = ($page-1)*$page_size;
         $data = $withdrawals->field('withdrawals.w_id,withdrawals.money,withdrawals.create_time,withdrawals.create_ip,withdrawals.user_id,withdrawals.status,withdrawals.card_name,user.username,user.shop_name')->join('user ON withdrawals.user_id=user.id')->limit($page_limit,$page_size)->select();
